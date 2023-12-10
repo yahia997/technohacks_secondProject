@@ -150,7 +150,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .boxes::before {
   content: url("../../public/bg-quotes.png");
@@ -177,6 +177,46 @@
 }
 @media (max-width: 991px) {
   .boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Get early access today form */
+.form > div {
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  padding: 40px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  box-shadow: 0px 5px 20px 0 var(--footer-bg);
+  transform: translateY(50%);
+}
+.formInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.formInfo h2 {
+  margin-bottom: 15px;
+}
+.field {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 20px;
+  align-items: flex-start;
+}
+.field div {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .field {
     grid-template-columns: 1fr;
   }
 }
